@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+    --primary-blue: #0b4fa3;   /* main sign blue */
+    --dark-blue: #083b7a;      /* darker shade */
+    --white: #ffffff;
+    --light-gray: #f1f5f9;
+    --text-dark: #0f172a;
+}
+body {
+    background: var(--light-gray);
+    color: var(--text-dark);
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* ---------- HERO ---------- */
+.hero {
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+                url("images/paella_royale.jpg") center/cover no-repeat;
+    color: white;
+    min-height: 100vh;
+}
+
+.navbar {
+    background: var(--primary-blue);
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: auto;
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0; /* 🔑 keeps links visible */
+}
+.nav-links a {
+    color: #ffffff !important;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+}
+.nav-links a:hover {
+    opacity: 0.85;
+}
+.nav-links a,
+.nav-links a:visited {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links li {
+    white-space: nowrap; /* 🔑 no line breaks */
+}
+
+.logo img {
+    height: 50px;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.hero-content {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.hero-content h2 {
+    font-size: 70px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.hero-content p {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #ff9800;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+/* ---------- MENU ---------- */
+.menu {
+    padding: 60px 40px;
+}
+
+.menu h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+/* ---------- MENU CARD ---------- */
+.menu-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden; /* VERY IMPORTANT */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform .3s;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+}
+
+/* IMAGE FIX */
+.menu-card img {
+    width: 100%;
+    height: 200px;
+    display: block;
+}
+
+/* TEXT */
+.menu-card h3 {
+    padding: 15px 15px 5px;
+    font-size: 18px;
+}
+
+.menu-card span {
+    padding: 0 15px 15px;
+    display: block;
+    font-weight: bold;
+    color: #ff9800;
+}
+
+/* ---------- ABOUT ---------- */
+.about {
+    padding: 60px 40px;
+    background: white;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+/* ---------- GALLERY ---------- */
+.gallery {
+    padding: 60px 40px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+}
+
+/* ---------- CONTACT ---------- */
+.contact {
+    padding: 60px 40px;
+    background: #222;
+    color: white;
+    text-align: center;
+}
+
+.contact p {
+    margin: 10px 0;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+}
